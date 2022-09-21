@@ -4,77 +4,143 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <title>Zasky</title>
 </head>
 <body>
+
     <!-- navbar -->
-    <nav class="">
-        <div class="container-fluid">
-            <div class="row text-center">
-                <div class="col">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </div>
-                <div class="col">
-                    <a class="nav-link" href="#">Chi sono?</a>
-                </div>
-                <div class="col">   
-                    <img src="img/logo_zasky.png" alt="logo_zasky" id="logo" style="width: 200px;">     
-                </div>
-                <div class="col">
-                    <a class="nav-link" href="#">Tattoo</a>
-                </div>
-                <div class="col">
-                    <a class="nav-link" href="#">Contattami</a>
-                </div>
-            </div>    
-        </div>
+    <nav >
+        <ul class="nav fixed-top justify-content-center row text-center">
+            <li class="nav-item col-2">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item col-2">
+                <a class="nav-link" href="#">Chi sono?</a>
+            </li>
+            <li class="nav-item col-2">
+                <img src="img/logo_zasky.png" alt="logo_zasky" id="logo" style="width: 200px;">
+            </li>
+            <li class="nav-item col-2">
+                <a class="nav-link" href="#">Tattoo gallery</a>
+            </li>
+            <li class="nav-item col-2">
+                <a class="nav-link" href="#">Contattami</a>
+                </li>
+        </ul>
     </nav>
     <!-- chi sono -->
-    <div class="row">
-        <div class="col-4" style="width: 500px; height: 500px;">
-            foto
-        </div>
-        <div class="col-6">
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto alias ea quidem odio saepe tempore, distinctio nisi iste repellendus nam voluptatibus, facilis aspernatur nesciunt nihil nulla sunt in excepturi ratione.</span>
+    <div class="container mt-5" style="padding-top: 100px;">
+        <div class="row">
+            <div class="col-4" style="width: 500px; height: 500px;">
+                
+                <img id="myImage" src="img/Zasky-img.PNG" alt="image test" style="width: 100%; height: 100%;"/>
+                
+            </div>
+            <div class="col-6">
+                <div class="">
+                    <span>
+                        Classe 1996, nerd fino al midollo, sviluppa nel corso degli anni una predilezione per anime e manga .
+
+                        Passione che lo porta inconsciamente a tatuare fino a specializzarsi appunto nello stile anime e cartoon.
+                        
+                        Predilige lavori a colori ma le classiche scan dei manga lo fanno impazzire.
+                    </span>
+                </div>
+            </div>
         </div>
     </div>
+    <div class="container" style="width: 300px;"><img src="img/decorazione-png-5.png" alt="logo_zasky" id="logo" style="width: 100%; height: 100%;"></div>
+    
     <!-- tattoo -->
-    <div>
-        carousel
-    </div>
-    <!-- contattami -->
     <div class="container">
         <div class="row">
-            <div class="col">
-                <label for="exampleFormControlInput1" class="form-label">First name</label>
-                <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+            <div class="col-1" style="padding-top: 20%;">
+                <span id="left" class="" ><i class="fa-solid fa-chevron-left"></i></span>
+                
             </div>
-            <div class="col">
-                <label for="exampleFormControlInput1" class="form-label">Last name</label>
-                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+            <div class="col-10">
+                <div class="container-carousel">
+                    <input type="radio" name="position" checked />
+                    <input type="radio" name="position" />
+                    <input type="radio" name="position" />
+                    <input type="radio" name="position" />
+                    <input type="radio" name="position" />
+                    <div class="img-carousel">
+                        <div class="item"><img src="img/1.jpeg" alt="logo_zasky" id="logo" style="width: 100%; height: 100%;"> </div>
+                        <div class="item"><img src="img/6.jpeg" alt="logo_zasky" id="logo" style="width: 100%; height: 100%;"> </div>
+                        <div class="item"><img src="img/3.jpeg" alt="logo_zasky" id="logo" style="width: 100%; height: 100%;"> </div>
+                        <div class="item"><img src="img/4.jpeg" alt="logo_zasky" id="logo" style="width: 100%; height: 100%;"> </div>
+                        <div class="item"><img src="img/5.jpeg" alt="logo_zasky" id="logo" style="width: 100%; height: 100%;"> </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            <div class="col-1 " style="padding-top: 20%;">
+                <span id="rigth" class=""><i class="fa-solid fa-chevron-right"></i></span>
+            </div>
+            
         </div>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Numero telefono</label>
-            <input type="test" class="form-control" id="exampleFormControlInput" placeholder="Numero telefono">
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Inserire nome Anime/Manga/personaggio, dove fare il tattuaggio e la dimensione"></textarea>
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">foto</label>
-            <input type="file" class="form-control" aria-label="file example" required>
-          </div>
-        
-    </div>  
+    </div>
+    <div class="container" style="width: 300px;"><img src="img/decorazione-png-5.png" alt="logo_zasky" id="logo" style="width: 100%; height: 100%;"></div>
+    <!-- Testimonianze -->
+    <div>
+        <h2>Testimonianze</h2>
+    </div>
+    <div class="container" style="width: 300px;"><img src="img/decorazione-png-5.png" alt="logo_zasky" id="logo" style="width: 100%; height: 100%;"></div>   
+    <!-- contattami -->
+    <div class="container"> 
+        <div class="row">
+            <div class="col-6">
+                <div class="mb-4">
+                    <h1>INDIRIZZO</h1>
+                    <span>Via Santa Valeria, 68 <br>
+                        20831 Seregno MB <br>
+                        Italia</span>
+                </div>
+                <div class="mb-4 mt-2">
+                    <h1>TELEFONO</h1>
+                    <span>345 180 7814</span>
+                </div>
+                <div class="mb-4 mt-2">
+                    <h1>EMAIL</h1>
+                    <span></span>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Nome Cognome</label>
+                    <input type="text" class="form-control" placeholder="First name" aria-label="Nome Cognome">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Numero telefono</label>
+                    <input type="test" class="form-control" id="exampleFormControlInput" placeholder="Numero telefono">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Inserire nome Anime/Manga/personaggio, dove fare il tattuaggio e la dimensione"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Foto</label>
+                    <input type="file" class="form-control" aria-label="file example" required>
+                </div>
+                <button class="btn btn-primary">Invia</button>
+            </div>
+        </div>  
+    </div> 
+    <div class="container" style="width: 300px;"><img src="img/decorazione-png-5.png" alt="logo_zasky" id="logo" style="width: 100%; height: 100%;"></div>
+    <!-- footer -->
+    <footer>
+
+    </footer> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="script.js"></script> 
 </body>
 </html>
