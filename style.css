@@ -107,7 +107,7 @@ input:nth-of-type(5):checked ~ .img-carousel {
 }
 
 .nav-link{
-    color: #cb4cdb;
+    color: white;
     font-size: 20px;
 }
 
